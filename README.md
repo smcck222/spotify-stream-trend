@@ -12,21 +12,22 @@ Preprocessed data for 8 countries.
 
 top200_9countries.csv 
 
-1. Removed unwanted columns ('Unnamed: 0','artist_x', 'artist_y', 'explicit', 'type', 'chart', 'album', 'id')
-2. Concatenated title + region = title 
-3. Split date => year and month. 
-4. Added top200 count (across full data) - based on title (which has region). 
-5. Calculated trend_rank_score for a song based on region (title), up till each individual date (sorted data by AO of title, date).
+- Removed unwanted columns ('Unnamed: 0','artist_x', 'artist_y', 'explicit', 'type', 'chart', 'album', 'id')
+- Concatenated title + region = title 
+- Split date => year and month. 
+- Added top200 count (across full data) - based on title (which has region). 
+- Calculated trend_rank_score for a song based on region (title), up till each individual date (sorted data by AO of title, date).
 
 top200_9countries_processed2.csv 
 
-1. Reduced dataset to most recent unique songs (by region). 
-2. Merged trend_rank_score into this. 
-3. Binned streams by different regions. 
+- Reduced dataset to most recent unique songs (by region). 
+- Merged trend_rank_score into this. 
+- Binned streams by different regions. 
 
 3. /ie 
 
-Full data (meta + audio features + charts) for Ireland. 
+- Full data (meta + audio features + charts) for Ireland. 
+
 
 ## Time Series Analysis
 'EDA+TimeSeries.ipynb'contains the code for the following:
@@ -39,6 +40,7 @@ Full data (meta + audio features + charts) for Ireland.
 The timeseries models were run on "acousticness" features of the Rank #1 song in the Canadian top200 charts, sampled in 30-day intervals. We have also provided the flexibility to enable the user to run the models for different combination of inputs: Rank, Feature and Country.
 
 We have observed that the ARIMA model performed better to forecast acousticness on our Canadian dataset (univariate) than its LSTM counterparts (vanilla, multivariate and mulilayer).
+
 
 ## Classification
 
