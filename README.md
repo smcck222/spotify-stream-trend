@@ -20,6 +20,15 @@ top200_processed2.csv
 3. Binned streams by different regions. 
 
 ## Time Series Analysis
+'EDA+TimeSeries.ipynb'contains the code for the following:
+- Data Preprocessing
+- Data Augmentation(inclusion of features top200_count and trend_rank_score)
+- Categorical Feature Encoding
+- Time-Series Models: ARIMA(Auto Regressive Integrated Moving Average) and LSTM RNN(Long Short Term Memory Recurrent Neural Networks)
+
+The models were run on "acousticness" features of the Rank #1 song in the Canadian top200 charts, sampled in 30-day intervals .We have also provided the flexibility to enable the user to run the models for different combination of inputs: Rank, Feature and Country.
+
+We have observed that the ARIMA model performed better on our Canadian acoustic dataset than its LSTM counterparts (vanilla and mulilayer).
 
 ## Classification
 
