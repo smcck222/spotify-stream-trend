@@ -12,24 +12,24 @@ The 'data' folder consists of
 
 - top200_9countries.csv 
 
--- Removed unwanted columns ('Unnamed: 0','artist_x', 'artist_y', 'explicit', 'type', 'chart', 'album', 'id')
+ - Removed unwanted columns ('Unnamed: 0','artist_x', 'artist_y', 'explicit', 'type', 'chart', 'album', 'id')
 
--- Concatenated title + region = title 
+ - Concatenated title + region = title 
 
--- Split date => year and month. 
+ - Split date => year and month. 
 
--- Added top200 count (across full data) - based on title (which has region). 
+ - Added top200 count (across full data) - based on title (which has region). 
 
--- Calculated trend_rank_score for a song based on region (title), up till each individual date (sorted data by AO of title, date).
+ - Calculated trend_rank_score for a song based on region (title), up till each individual date (sorted data by AO of title, date).
 
 
-top200_9countries_processed2.csv 
+- top200_9countries_processed2.csv 
 
--- Reduced dataset to most recent unique songs (by region). 
+ - Reduced dataset to most recent unique songs (by region). 
 
--- Merged trend_rank_score into this. 
+ - Merged trend_rank_score into this. 
 
--- Binned streams by different regions. 
+ - Binned streams by different regions. 
 
 
 3. /ie 
